@@ -24,7 +24,7 @@ export default function LargeSettings() {
               dispatch(setLargeShowVotingButtons(!!e.detail.checked))
             }
           >
-            Show Voting Buttons
+            <span className="ion-text-wrap">Show Voting Buttons</span>
           </IonToggle>
         </IonItem>
       </IonList>

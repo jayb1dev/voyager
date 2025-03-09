@@ -18,7 +18,7 @@ export default function CommunityAtTop() {
           dispatch(setCommunityAtTop(e.detail.checked));
         }}
       >
-        Show Community at Top
+        <span className="ion-text-wrap">Show Community at Top</span>
       </IonToggle>
     </IonItem>
   );

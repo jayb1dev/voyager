@@ -18,7 +18,7 @@ export default function RememberType() {
           dispatch(setRememberPostAppearance(e.detail.checked))
         }
       >
-        Post Size Per Community
+        <span className="ion-text-wrap">Post Size Per Community</span>
       </IonToggle>
     </IonItem>
   );

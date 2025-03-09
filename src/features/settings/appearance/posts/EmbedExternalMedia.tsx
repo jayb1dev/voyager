@@ -24,7 +24,7 @@ export default function EmbedExternalMedia() {
           dispatch(setEmbedExternalMedia(e.detail.checked));
         }}
       >
-        Embed External Media
+        <span className="ion-text-wrap">Embed External Media</span>
       </IonToggle>
     </IonItem>
   );

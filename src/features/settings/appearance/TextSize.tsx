@@ -45,7 +45,7 @@ export default function TextSize() {
               dispatch(setUseSystemFontSize(e.detail.checked))
             }
           >
-            Use System Text Size
+            <span className="ion-text-wrap">Use System Text Size</span>
           </IonToggle>
         </IonItem>
         <IonItem>
@@ -82,7 +82,7 @@ export default function TextSize() {
                 )
               }
             >
-              Larger Text Mode
+              <span className="ion-text-wrap">Larger Text Mode</span>
             </IonToggle>
           </IonItem>
         )}

@@ -16,7 +16,7 @@ export default function AlwaysShowAuthor() {
         checked={alwaysShowAuthor}
         onIonChange={(e) => dispatch(setAlwaysShowAuthor(e.detail.checked))}
       >
-        Always Show Author
+        <span className="ion-text-wrap">Always Show Author</span>
       </IonToggle>
     </IonItem>
   );

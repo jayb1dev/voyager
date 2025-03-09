@@ -25,7 +25,7 @@ export default function ShowUserInstance() {
           )
         }
       >
-        Show User Instance
+        <span className="ion-text-wrap">Show User Instance</span>
       </IonToggle>
     </IonItem>
   );

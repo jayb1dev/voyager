@@ -16,7 +16,7 @@ export default function ShowCommunityIcons() {
         checked={showCommunityIcons}
         onIonChange={(e) => dispatch(setShowCommunityIcons(e.detail.checked))}
       >
-        Show Community Icons
+        <span className="ion-text-wrap">Show Community Icons</span>
       </IonToggle>
     </IonItem>
   );

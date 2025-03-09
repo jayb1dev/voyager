@@ -16,7 +16,7 @@ export default function EmbedCrossposts() {
         checked={embedCrossposts}
         onIonChange={(e) => dispatch(setEmbedCrossposts(e.detail.checked))}
       >
-        Embed Crossposts
+        <span className="ion-text-wrap">Embed Crossposts</span>
       </IonToggle>
     </IonItem>
   );
