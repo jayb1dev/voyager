@@ -108,19 +108,6 @@ export default function SettingsPage() {
 
         {databaseError && <DatabaseErrorItem />}
 
-        <IonList inset>
-          <IonItem
-            onClick={() => presentTip({ cssClass: "transparent-scroll" })}
-            button
-            detail
-          >
-            <IconBg color="color(display-p3 1 0 0)" slot="start">
-              <IonIcon icon={heart} />
-            </IconBg>
-            <IonLabel className="ion-text-nowrap">Support Voyager</IonLabel>
-          </IonItem>
-        </IonList>
-
         {!isNative() && (
           <IonList inset>
             <IonItem routerLink="/settings/install">
