@@ -15,12 +15,16 @@ interface PreviewStatsProps {
 
 export default function PreviewStats({ post }: PreviewStatsProps) {
   return (
-    <div className={styles.container}>
-      <Vote item={post} />
-      <Stat icon={chatbubbleOutline}>{formatNumber(post.counts.comments)}</Stat>
-      <TimeStat>
-        <Ago date={post.post.published} />
-      </TimeStat>
-    </div>
+    <>
+      <div className={styles.container}>
+        <Vote item={post} />
+      </div>
+      <div className={styles.container}>
+        <Stat icon={chatbubbleOutline}>{formatNumber(post.counts.comments)}</Stat>
+        <TimeStat>
+          <Ago date={post.post.published} />
+        </TimeStat>
+      </div>
+    </>
   );
 }
