@@ -9,6 +9,7 @@
     "dev": "vite",
     "ionic:build:before": "./scripts/prebuild.sh",
     "build": "pnpm ionic:build:before && vite build",
+    "capacitor:sync:after": "./scripts/postcapacitor.sh",
     "postinstall": "cap telemetry off && ionic config set -g telemetry false",
     "preview": "vite preview",
     "test": "vitest",
