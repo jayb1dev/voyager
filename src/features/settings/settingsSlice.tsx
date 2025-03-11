@@ -195,21 +195,21 @@ const baseState: SettingsState = {
     },
     deviceMode: "ios",
     font: {
-      accommodateLargeText: false,
-      fontSizeMultiplier: 1,
+      accommodateLargeText: true,
+      fontSizeMultiplier: 1.8,
       useSystemFontSize: false,
     },
     general: {
       profileLabel: OProfileLabelType.Instance,
-      userInstanceUrlDisplay: OInstanceUrlDisplayMode.Never,
+      userInstanceUrlDisplay: OInstanceUrlDisplayMode.WhenRemote,
     },
     large: {
       showVotingButtons: true,
     },
     posts: {
-      alwaysShowAuthor: false,
+      alwaysShowAuthor: true,
       blurNsfw: OPostBlurNsfw.InFeed,
-      communityAtTop: false,
+      communityAtTop: true,
       embedCrossposts: true,
       embedExternalMedia: true,
       rememberType: false,
@@ -220,7 +220,7 @@ const baseState: SettingsState = {
     theme: "default",
     votesTheme: "lemmy",
     voting: {
-      voteDisplayMode: OVoteDisplayMode.Total,
+      voteDisplayMode: OVoteDisplayMode.Separate,
     },
   },
   blocks: {
