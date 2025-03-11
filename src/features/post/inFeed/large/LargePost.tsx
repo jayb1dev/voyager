@@ -79,7 +79,7 @@ export default function LargePost({ post }: PostProps) {
               </div>
             )}
 
-            <div className={styles.title}>
+            <div className={styles.titleLarge}>
               <InlineMarkdown>{post.post.name}</InlineMarkdown>{" "}
               {isNsfw(post) && <Nsfw />}
             </div>
