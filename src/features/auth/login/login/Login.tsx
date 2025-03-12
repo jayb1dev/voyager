@@ -204,16 +204,6 @@ export default function Login({ url, siteIcon }: LoginProps) {
           </IonList>
         </form>
 
-        <HelperText>
-          By using Voyager, you agree to the{" "}
-          <InAppExternalLink
-            href={VOYAGER_TERMS}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Terms of Use
-          </InAppExternalLink>
-        </HelperText>
       </IonContent>
     </>
   );

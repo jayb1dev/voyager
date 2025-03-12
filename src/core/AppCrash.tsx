@@ -67,47 +67,9 @@ Error: \`\`${error}\`\`
 
   return (
     <div className={styles.container}>
-      <h2>🫣 Gah! Voyager crashed!</h2>
-      <div>
-        Voyager does not collect any data, so we would appreciate you
-        voluntarily submitting this crash for us to investigate.
-      </div>
-      <IonButton
-        href={generateTruncatedCrashUrl(crashData)}
-        target="_blank"
-        rel="noopener noreferrer"
-        color="success"
-      >
-        <IonIcon icon={logoGithub} slot="start" />
-        <IonLabel>Open Github issue with crash data</IonLabel>
-      </IonButton>
 
-      <hr />
+      <h2>Sea Voyager crashed!</h2>
 
-      <div>
-        You can also try reloading the app to see if that solves the issue.
-        {isNative() ? " Check the app store for an update, too." : ""}
-      </div>
-      <IonButton onClick={unloadServiceWorkerAndRefresh}>Reload app</IonButton>
-
-      <hr />
-
-      <div>
-        If this crash is affecting many people, you can probably learn more{" "}
-        <a
-          href="https://lemmy.world/c/voyagerapp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          at Voyager&apos;s Lemmy community
-        </a>
-        .
-      </div>
-
-      <div>As a last resort, try clearing all app data.</div>
-      <IonButton color="danger" onClick={clearData}>
-        Clear app data
-      </IonButton>
     </div>
   );
 }

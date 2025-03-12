@@ -31,7 +31,9 @@ export default function Account({ editing, account, allowEdit }: AccountProps) {
 
   const label = (
     <>
-      {account.handle} {isGuest && <IonText color="medium">(guest)</IonText>}
+      <div className="ion-text-wrap">
+        {account.handle} {isGuest && <IonText color="medium">(guest)</IonText>}
+      </div>
     </>
   );
 
@@ -44,6 +46,7 @@ export default function Account({ editing, account, allowEdit }: AccountProps) {
           </IonItemOption>
         </IonItemOptions>
       )}
+
       <IonItem>
         {editing && <RemoveItemButton />}
         {editing ? (

@@ -18,6 +18,10 @@ export default function AppDetails() {
         </div>
 
       </div>
+      
+      <div>
+            VERSION 1.0.0
+      </div>
 
       <div>
         <p>

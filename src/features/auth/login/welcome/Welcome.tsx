@@ -21,11 +21,9 @@ export default function Welcome() {
       <IonContent className={styles.content} fullscreen>
         <AppHeader collapse="condense">
           <IonToolbar color=" ">
-            <IonTitle size="large">Welcome.</IonTitle>
+            <IonTitle size="large">Welcome</IonTitle>
           </IonToolbar>
         </AppHeader>
-
-        <BaseSvg className={styles.baseSvg} />
 
         <Buttons />
       </IonContent>

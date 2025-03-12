@@ -22,35 +22,15 @@ export default function Buttons() {
     <>
       <div className={styles.topSpacer} />
       <div className={styles.container} ref={ref}>
-        <IonButton
-          expand="block"
-          onClick={() => startJoinFlow(connectedInstance)}
-          disabled={loadingJoin}
-        >
-          {loadingJoin ? <IonSpinner /> : `Join ${connectedInstance}`}
-        </IonButton>
-        <IonNavLink component={() => <PickJoinServer />}>
-          <IonButton fill="outline" color="dark" expand="block">
-            Pick another server
-          </IonButton>
-        </IonNavLink>
-        <div className={styles.or}>
-          <hr />
-          OR
-          <hr />
-        </div>
 
         <div className={styles.buttonLine}>
-          <IonNavLink component={() => <LearnMore />}>
-            <IonButton fill="clear" color="dark" expand="block">
-              Learn More
-            </IonButton>
-          </IonNavLink>
+
           <IonNavLink component={() => <PickLoginServer />}>
             <IonButton fill="clear" color="dark" expand="block">
               Log In
             </IonButton>
           </IonNavLink>
+
         </div>
       </div>
       <div className={styles.bottomSpacer} />
