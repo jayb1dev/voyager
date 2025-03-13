@@ -33,7 +33,17 @@ export default function Buttons() {
 
         </div>
       </div>
+
       <div className={styles.bottomSpacer} />
+
+      <div className={styles.buttonLine}>
+        <center>
+            Swipe down to cancel
+        </center>
+      </div>
+
+      <div className={styles.bottomSpacer} />
+
     </>
   );
 }
