@@ -55,7 +55,29 @@ export default function AppDetails() {
         </p>
 
       </div>
- 
+
+      <div>
+            LICENSE AGPL-3.0
+      </div>
+
+      <div>
+
+        <IonItemInAppExternalLink
+            detail
+            href="https://github.com/jayb1dev/voyager/tree/sea-voyager"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+          Sea Voyager is released under the
+          AGPL-3.0 license.
+          The source code is available here.
+
+        </IonItemInAppExternalLink>
+
+      </div>
+
+
     </>
   );
 }
