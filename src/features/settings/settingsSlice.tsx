@@ -196,7 +196,7 @@ const baseState: SettingsState = {
     deviceMode: "ios",
     font: {
       accommodateLargeText: true,
-      fontSizeMultiplier: 1.8,
+      fontSizeMultiplier: 2.0,
       useSystemFontSize: false,
     },
     general: {
