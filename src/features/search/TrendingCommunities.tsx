@@ -39,7 +39,7 @@ export default function TrendingCommunities() {
           key={community.community.id}
         >
           <IonIcon icon={trendingUp} color="primary" slot="start" />
-          <IonLabel className="ion-text-nowrap">
+          <IonLabel className="ion-text-wrap">
             {getHandle(community.community)}
           </IonLabel>
         </IonItem>

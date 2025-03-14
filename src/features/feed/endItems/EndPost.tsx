@@ -31,7 +31,18 @@ export default function EndPost({
           </>
         );
 
-      return <>Nothing to see here — {feedName} is completely empty.</>;
+      return <>
+            <div>
+                Nothing to see here — {feedName} is completely empty.
+            </div>
+            <div>
+                <br/>
+            </div>
+            <div>
+                If this is your home feed, try subscribing
+                to some communities.
+            </div>
+        </>;
     }
 
     return <>You&apos;ve reached the end!</>;

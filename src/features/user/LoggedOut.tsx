@@ -21,7 +21,12 @@ export default function LoggedOut() {
     useContext(PageContext);
 
   return (
-    <AppContent className={styles.content}>
+
+    <AppContent 
+        className={styles.content}
+        scrollY={true}
+        >
+
       <div>
         <IonText color="medium">
           <p className={styles.message}>
@@ -38,6 +43,22 @@ export default function LoggedOut() {
         >
           {accountsListEmpty ? "Get Started" : "Log In"}
         </IonButton>
+
+        {accountsListEmpty && (
+            <div>
+                <IonText color="medium">
+                    <p className={styles.message}>
+                        Sea Voyager does not support account registration.
+                    </p>
+                    <p className={styles.message}>
+                        If you do not have a Lemmy account, use your
+                        desktop or other device to register a Lemmy 
+                        account with your preferred Lemmy instance.
+                    </p>
+                </IonText>
+            </div>
+        )}
+
         {!accountsListEmpty && (
           <IonButton
             className="ion-padding-start ion-padding-end"
@@ -51,7 +72,7 @@ export default function LoggedOut() {
           </IonButton>
         )}
       </div>
-      <IncognitoSvg className={sharedStyles.emptyStateIcon} />
+
     </AppContent>
   );
 }

@@ -54,17 +54,17 @@ export default function SearchOptions({ search }: SearchOptionsProps) {
         )}
         <IonItem routerLink={buildSearchPostsLink(search)}>
           <IonIcon icon={albumsOutline} color="primary" slot="start" />
-          <IonLabel className="ion-text-nowrap">Posts with “{search}”</IonLabel>
+          <IonLabel className="ion-text-wrap">Posts with “{search}”</IonLabel>
         </IonItem>
         <IonItem routerLink={buildSearchCommentsLink(search)}>
           <IonIcon icon={chatbubbleOutline} color="primary" slot="start" />
-          <IonLabel className="ion-text-nowrap">
+          <IonLabel className="ion-text-wrap">
             Comments with “{search}”
           </IonLabel>
         </IonItem>
         <IonItem routerLink={buildSearchCommunitiesLink(search)}>
           <IonIcon icon={searchOutline} color="primary" slot="start" />
-          <IonLabel className="ion-text-nowrap">
+          <IonLabel className="ion-text-wrap">
             Communities with “{search}”
           </IonLabel>
         </IonItem>
@@ -75,7 +75,7 @@ export default function SearchOptions({ search }: SearchOptionsProps) {
           )}
         >
           <IonIcon icon={personOutline} color="primary" slot="start" />
-          <IonLabel className="ion-text-nowrap">Go to User “{search}”</IonLabel>
+          <IonLabel className="ion-text-wrap">Go to User “{search}”</IonLabel>
         </IonItem>
       </IonList>
       {autoResolveType && <AutoResolvePostComment url={search} />}
