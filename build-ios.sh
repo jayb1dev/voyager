@@ -3,6 +3,8 @@
 # Build ios app
 #
 
+export BUILD_FOSS_ONLY=true
+
 corepack enable
 pnpm install
 
