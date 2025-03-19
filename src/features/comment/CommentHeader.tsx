@@ -131,6 +131,7 @@ export default function CommentHeader({
             {renderAside(comment.updated || comment.published)}
           </>
         );
+
       default:
         if (accommodateLargeText) {
           return (

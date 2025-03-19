@@ -17,21 +17,35 @@ interface StatsProps {
 
 export default function Stats({ post }: StatsProps) {
   return (
-    <div className={cx(styles.container, styles.sharedStatsClass)}>
-      <Vote item={post} />
-      <Stat icon={happyOutline}>
-        {Math.round(
-          (post.counts.upvotes + post.counts.downvotes
-            ? post.counts.upvotes /
-              (post.counts.upvotes + post.counts.downvotes)
-            : 1) * 100,
-        )}
-        %
-      </Stat>
-      <TimeStat>
-        <Ago date={post.post.published} />
-      </TimeStat>
-      <Edited item={post} showDate />
+    
+    <div className={styles.containerLarge}>
+
+        <div className={cx(styles.container, styles.sharedStatsClass)}>
+            <Vote item={post} />
+        </div>
+
+        <div className={styles.spacer}>
+        </div>
+
+        <div className={cx(styles.container, styles.sharedStatsClass)}>
+            <Stat icon={happyOutline}>
+                {Math.round(
+                (post.counts.upvotes + post.counts.downvotes
+                    ? post.counts.upvotes /
+                    (post.counts.upvotes + post.counts.downvotes)
+                    : 1) * 100,
+                )}
+                %
+            </Stat>
+            <br/>
+            <TimeStat>
+                <Ago date={post.post.published} />
+            </TimeStat>
+            <Edited item={post} showDate />
+        </div>
+
     </div>
+
   );
+
 }
