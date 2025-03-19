@@ -6,13 +6,11 @@
 
   gap: 0.5em;
 
-  color: var(--ion-color-medium2);
 }
 
 .personLink {
-  &.personLink {
-    color: var(--ion-text-color);
-  }
+
+  font-size: 0.95em;
 
   min-width: 0;
   overflow: hidden;

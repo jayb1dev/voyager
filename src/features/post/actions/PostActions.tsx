@@ -17,14 +17,18 @@ interface PostActionsProps {
 
 export default function PostActions({ post, onReply }: PostActionsProps) {
   return (
-    <div className={styles.container}>
-      <VoteButton type="up" post={post} />
-      <VoteButton type="down" post={post} />
-      <SaveButton post={post} />
-      <ActionButton onClick={onReply}>
-        <IonIcon icon={arrowUndoOutline} />
-      </ActionButton>
-      <ShareButton post={post} />
+    <div className={styles.containerLarge}>
+        <div className={styles.container}>
+            <VoteButton type="up" post={post} />
+            <VoteButton type="down" post={post} />
+        </div>
+        <div className={styles.container}>
+            <SaveButton post={post} />
+            <ActionButton onClick={onReply}>
+                <IonIcon icon={arrowUndoOutline} />
+            </ActionButton>
+            <ShareButton post={post} />
+        </div>
     </div>
   );
 }

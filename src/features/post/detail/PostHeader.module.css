@@ -61,10 +61,9 @@
 }
 
 .by {
-  font-size: 0.875em;
+  font-size: 0.95em;
 
   margin-bottom: 5px;
-  color: var(--ion-color-text-aside);
 
   white-space: nowrap;
   overflow: hidden;

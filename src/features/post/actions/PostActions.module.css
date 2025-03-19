@@ -1,9 +1,17 @@
 .container {
   display: flex;
-  justify-content: space-around;
+
   color: var(--ion-color-primary);
   font-size: 1.7em;
 
   width: 100%;
   padding: 3px 0;
+
+  align-items: start;
+
 }
+
+.containerLarge {
+  flex-direction: column;
+}
+
