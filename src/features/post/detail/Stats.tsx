@@ -37,7 +37,6 @@ export default function Stats({ post }: StatsProps) {
                 )}
                 %
             </Stat>
-            <br/>
             <TimeStat>
                 <Ago date={post.post.published} />
             </TimeStat>
