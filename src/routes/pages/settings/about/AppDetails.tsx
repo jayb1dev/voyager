@@ -20,7 +20,7 @@ export default function AppDetails() {
       </div>
       
       <div>
-            VERSION 1.0.25
+            VERSION 1.0.41
       </div>
 
       <div>

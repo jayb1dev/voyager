@@ -35,8 +35,7 @@ export default function ViewAllComments({ onHeight }: ViewAllCommentsProps) {
       to={buildGeneralBrowseLink(`/c/${community}/comments/${id}`)}
     >
       <div className={styles.text}>
-        <div>View All Comments</div>
-        <aside>This is a single comment thread from the post.</aside>
+        <aside>View All</aside>
       </div>
       <IonIcon className={styles.chevron} icon={chevronForward} />
     </Link>

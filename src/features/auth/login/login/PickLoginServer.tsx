@@ -142,57 +142,67 @@ export default function PickLoginServer() {
           </IonButtons>
         </IonToolbar>
       </AppHeader>
-      <IonContent scrollY={false}>
+
+      <IonContent scrollY={true}>
+
         <div className={styles.container} ref={ref}>
-          <div className="ion-padding">
+
+          <div className={styles.paddingLeft}>
             <IonText color="medium">
-              Pick the server you created your account on
+              Select a server
             </IonText>
           </div>
 
-          <IonSearchbar
-            ref={searchbarRef}
-            enterkeyhint="next"
-            placeholder="Enter URL or search for your server"
-            inputMode="url"
-            onKeyDown={(e) => {
-              if (e.key !== "Enter") return;
+          <div className="styles.smallerSearchBox">
 
-              // Invalid search and there is a candidate for autocomplete
-              if (
-                searchInvalid &&
-                instances[0] &&
-                instances[0] !== searchHostname
-              ) {
-                setSearch(instances[0]);
-                return;
-              }
+            <IonSearchbar
+                    className="styles.searchBarWidth"
+                    ref={searchbarRef}
+                    enterkeyhint="next"
+                    placeholder="Enter URL"
+                    inputMode="url"
+                    onKeyDown={(e) => {
+                      if (e.key !== "Enter") return;
 
-              // Already selected a server
-              if (search) return submit();
+                      // Invalid search and there is a 
+                      // candidate for autocomplete
 
-              // Valid with TLD (for autocomplete search)
-              if (!searchInvalid) {
-                submit();
-                return;
-              }
+                      if (
+                        searchInvalid &&
+                        instances[0] &&
+                        instances[0] !== searchHostname
+                      ) {
+                        setSearch(instances[0]);
+                        return;
+                      }
 
-              if (instances[0]) {
-                setSearch(instances[0]);
-                return;
-              }
+                      // Already selected a server
+                      if (search) return submit();
 
-              presentToast({
-                message: `“${search}” is not a valid server.`,
-                color: "danger",
-                fullscreen: true,
-              });
-            }}
-            value={search}
-            onIonInput={(e) => {
-              setSearch(e.detail.value ?? "");
-            }}
-          />
+                      // Valid with TLD (for autocomplete search)
+                      if (!searchInvalid) {
+                        submit();
+                        return;
+                      }
+
+                      if (instances[0]) {
+                        setSearch(instances[0]);
+                        return;
+                      }
+
+                      presentToast({
+                        message: `“${search}” is not a valid server.`,
+                        color: "danger",
+                        fullscreen: true,
+                      });
+                    }}
+                    value={search}
+                    onIonInput={(e) => {
+                      setSearch(e.detail.value ?? "");
+                    }}
+            />
+
+          </div>
 
           <IonList className={styles.list}>
             <VList
