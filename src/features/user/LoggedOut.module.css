@@ -10,3 +10,14 @@
 
   font-size: 0.875em;
 }
+
+.button {
+  max-height:   30px;
+  max-width:    90%;
+}
+
+.center {
+  align-items: center;
+}
+
+

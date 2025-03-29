@@ -28,29 +28,37 @@ export default function LoggedOut() {
         >
 
       <div>
+
         <IonText color="medium">
-          <p className={styles.message}>
-            You are browsing <strong>{connectedInstance}</strong> as a guest.
-            Log in to vote, comment and post!
-          </p>
+            <p className={styles.message}>
+                You are browsing as a guest.
+                Log in to vote, comment and post!
+            </p>
         </IonText>
-        <IonButton
-          className="ion-padding-start ion-padding-end"
-          expand="block"
-          onClick={() => {
-            presentLoginIfNeeded();
-          }}
-        >
-          {accountsListEmpty ? "Get Started" : "Log In"}
-        </IonButton>
+
+        <div className={styles.center}>
+
+                <IonButton
+                  expand="block"
+                  onClick={() => {
+                    presentLoginIfNeeded();
+                  }}
+                >
+                  {accountsListEmpty ? "Get Started" : "Log In"}
+                </IonButton>
+
+        </div>
 
         {accountsListEmpty && (
             <div>
                 <IonText color="medium">
                     <p className={styles.message}>
+
                         Sea Voyager does not support account registration.
-                    </p>
-                    <p className={styles.message}>
+
+                        <br />
+                        <br />
+
                         If you do not have a Lemmy account, use your
                         desktop or other device to register a Lemmy 
                         account with your preferred Lemmy instance.
