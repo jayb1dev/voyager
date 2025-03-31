@@ -12,6 +12,9 @@ import { ComponentProps } from "react";
 
 import { userHandleSelector } from "#/features/auth/authSelectors";
 import { FetchFn } from "#/features/feed/Feed";
+
+import styles from "./Profile.module.css";
+
 import PostCommentFeed, {
   PostCommentItem,
 } from "#/features/feed/PostCommentFeed";
@@ -63,6 +66,9 @@ export default function Profile({ person, onPull }: ProfileProps) {
 
   const header = (
     <MaxWidthContainer>
+      <div className={styles.userName}>
+        {getHandle(person.person_view.person)}
+      </div>
       <Scores
         aggregates={person.person_view.counts}
         accountCreated={person.person_view.person.published}

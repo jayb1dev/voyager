@@ -75,3 +75,10 @@ and I can't find a better solution 🤷‍♂️ */
 
   min-height: 0;
 }
+
+.communityName {
+  padding-left:     0.5rem;
+  padding-right:    0.5rem;
+}
+
+

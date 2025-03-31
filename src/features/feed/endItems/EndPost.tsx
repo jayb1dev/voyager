@@ -27,7 +27,9 @@ export default function EndPost({
       if (sortDuration)
         return (
           <>
-            No posts in {feedName} for last {sortDuration}.
+            <div className={styles.wrap}>
+                No posts in {feedName} for last {sortDuration}.
+            </div>
           </>
         );
 

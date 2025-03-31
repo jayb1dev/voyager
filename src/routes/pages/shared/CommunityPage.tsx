@@ -128,9 +128,13 @@ function CommunityPageContent({ community, actor }: CommunityPageParams) {
 
   const header = !searchOpen ? (
     <div className={styles.headerContainer}>
+      <div className={styles.communityName}>
+        {community}
+      </div>
+      <br />
       <IonSearchbar
         className={styles.communitySearchbar}
-        placeholder={`Search c/${community}`}
+        placeholder={`Search`}
         onFocus={() => {
           setSearchOpen(true);
           searchbarRef.current?.setFocus();
