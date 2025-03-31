@@ -152,17 +152,6 @@ export default function SettingsPage() {
             <IonLabel className="ion-text-nowrap">Appearance</IonLabel>
           </IonItem>
 
-          {isNative() && (
-            <IonItem routerLink="/settings/app-icon">
-              <img
-                src={getIconSrc(icon)}
-                slot="start"
-                className={styles.appIcon}
-              />
-              <IonLabel className="ion-text-nowrap">App Icon</IonLabel>
-            </IonItem>
-          )}
-
           {biometricSupported && (
             <IonItem routerLink="/settings/biometric">
               <IconBg

@@ -118,7 +118,9 @@ export default function CommunityListItem({
       >
         <div className={listStyles.content}>
           <ItemIcon item={community} size={28} />
-          {handle}
+          <div className={styles.wrap}>
+            {handle}
+          </div>
         </div>
         {loggedIn && (
           <ActionButton

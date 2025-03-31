@@ -91,16 +91,30 @@ export default function PersonLink({
     ) === OInstanceUrlDisplayMode.WhenRemote;
 
   let color: string | undefined;
+  let infoTag: string | undefined;
 
-  if (_color) color = _color;
-  else if (isAdmin) color = "var(--ion-color-danger)";
-  else if (distinguished) color = "var(--ion-color-success)";
-  else if (
-    person.actor_id === "https://lemmy.world/u/aeharding" ||
-    person.actor_id === "https://vger.social/u/aeharding"
-  )
+  infoTag = "";
+
+  if (_color) {
+    color = _color;
+  } else if (isAdmin) {
+    color = "var(--ion-color-danger)";
+  } else if (distinguished) {
+    color = "var(--ion-color-success)";
+  } else if (   person.actor_id === "https://lemmy.world/u/aeharding" ||
+                person.actor_id === "https://vger.social/u/aeharding") {
     color = "var(--ion-color-tertiary-tint)";
-  else if (opId && person.id === opId) color = "var(--ion-color-primary-fixed)";
+  } else if (opId && person.id === opId) {
+    color = "var(--ion-color-primary-fixed)";
+  }
+
+  if (opId && person.id === opId) {
+    infoTag += " [OP]";
+  }
+
+  if (isAdmin) {
+    infoTag += " [A]";
+  }
 
   const tagText = typeof tag === "object" ? tag.text : undefined;
 
@@ -118,6 +132,7 @@ export default function PersonLink({
   const end = (
     <>
       {instance}
+      {infoTag}
       {showBadge && (
         <>
           {person.bot_account && " 🤖"}
