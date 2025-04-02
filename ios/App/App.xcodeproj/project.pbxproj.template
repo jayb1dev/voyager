@@ -17,34 +17,9 @@
 		E71849C82B9FA18C00F6C005 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71849C72B9FA18C00F6C005 /* UniformTypeIdentifiers.framework */; };
 		E71849CD2B9FA18C00F6C005 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71849CC2B9FA18C00F6C005 /* ActionRequestHandler.swift */; };
 		E71849CF2B9FA18C00F6C005 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = E71849CE2B9FA18C00F6C005 /* Action.js */; };
-		E71849D32B9FA18C00F6C005 /* VoyagerActionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E71849C62B9FA18C00F6C005 /* VoyagerActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E71849DA2B9FA7BF00F6C005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71849D82B9FA6ED00F6C005 /* Assets.xcassets */; };
 		E7B2B4FA2B2511CC0050006F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30E1FED79650016851F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E71849D12B9FA18C00F6C005 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E71849C52B9FA18C00F6C005;
-			remoteInfo = VoyagerActionExtension;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		E71849D42B9FA18C00F6C005 /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				E71849D32B9FA18C00F6C005 /* VoyagerActionExtension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2FAD9762203C412B000D30F8 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
@@ -58,7 +33,6 @@
 		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
 		AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF51FD2D460BCFE21FA515B2 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
-		E71849C62B9FA18C00F6C005 /* VoyagerActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VoyagerActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71849C72B9FA18C00F6C005 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		E71849CC2B9FA18C00F6C005 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
 		E71849CE2B9FA18C00F6C005 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
@@ -100,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				504EC3061FED79650016851F /* App */,
-				E71849C92B9FA18C00F6C005 /* VoyagerActionExtension */,
 				504EC3051FED79650016851F /* Products */,
 				7F8756D8B27F46E3366F6CEA /* Pods */,
 				27E2DDA53C4D2A4D1A88CE4A /* Frameworks */,
@@ -111,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				504EC3041FED79650016851F /* App.app */,
-				E71849C62B9FA18C00F6C005 /* VoyagerActionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,17 +112,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E71849C92B9FA18C00F6C005 /* VoyagerActionExtension */ = {
-			isa = PBXGroup;
-			children = (
-				E71849CC2B9FA18C00F6C005 /* ActionRequestHandler.swift */,
-				E71849CE2B9FA18C00F6C005 /* Action.js */,
-				E71849D02B9FA18C00F6C005 /* Info.plist */,
-				E71849D82B9FA6ED00F6C005 /* Assets.xcassets */,
-			);
-			path = VoyagerActionExtension;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,23 +135,6 @@
 			productName = App;
 			productReference = 504EC3041FED79650016851F /* App.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E71849C52B9FA18C00F6C005 /* VoyagerActionExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E71849D72B9FA18C00F6C005 /* Build configuration list for PBXNativeTarget "VoyagerActionExtension" */;
-			buildPhases = (
-				E71849C22B9FA18C00F6C005 /* Sources */,
-				E71849C32B9FA18C00F6C005 /* Frameworks */,
-				E71849C42B9FA18C00F6C005 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = VoyagerActionExtension;
-			productName = VoyagerActionExtension;
-			productReference = E71849C62B9FA18C00F6C005 /* VoyagerActionExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -225,7 +169,6 @@
 			projectRoot = "";
 			targets = (
 				504EC3031FED79650016851F /* App */,
-				E71849C52B9FA18C00F6C005 /* VoyagerActionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -313,7 +256,6 @@
 /* Begin PBXTargetDependency section */
 		E71849D22B9FA18C00F6C005 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E71849C52B9FA18C00F6C005 /* VoyagerActionExtension */;
 			targetProxy = E71849D12B9FA18C00F6C005 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -474,7 +416,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DDEBUG\"";
-				PRODUCT_BUNDLE_IDENTIFIER = app.seav.seavoyager;
+				PRODUCT_BUNDLE_IDENTIFIER = app.seev.seevoy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -498,86 +440,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.seav.seavoyager;
+				PRODUCT_BUNDLE_IDENTIFIER = app.seev.seevoy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		E71849D52B9FA18C00F6C005 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = ActionIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6S42TYZ5ZV;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VoyagerActionExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Open in Voyager";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = app.seav.seavoyager.VoyagerActionExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E71849D62B9FA18C00F6C005 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = ActionIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6S42TYZ5ZV;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VoyagerActionExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Open in Voyager";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = app.seav.seavoyager.VoyagerActionExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -600,15 +466,6 @@
 			buildConfigurations = (
 				504EC3171FED79650016851F /* Debug */,
 				504EC3181FED79650016851F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E71849D72B9FA18C00F6C005 /* Build configuration list for PBXNativeTarget "VoyagerActionExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E71849D52B9FA18C00F6C005 /* Debug */,
-				E71849D62B9FA18C00F6C005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
