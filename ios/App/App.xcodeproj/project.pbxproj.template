@@ -124,7 +124,6 @@
 				504EC3011FED79650016851F /* Frameworks */,
 				504EC3021FED79650016851F /* Resources */,
 				9592DBEFFC6D2A0C8D5DEB22 /* [CP] Embed Pods Frameworks */,
-				E71849D42B9FA18C00F6C005 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -256,7 +255,6 @@
 /* Begin PBXTargetDependency section */
 		E71849D22B9FA18C00F6C005 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			targetProxy = E71849D12B9FA18C00F6C005 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

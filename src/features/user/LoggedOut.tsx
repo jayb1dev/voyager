@@ -32,7 +32,6 @@ export default function LoggedOut() {
         <IonText color="medium">
             <p className={styles.message}>
                 You are browsing as a guest.
-                Log in to vote, comment and post!
             </p>
         </IonText>
 
@@ -54,7 +53,7 @@ export default function LoggedOut() {
                 <IonText color="medium">
                     <p className={styles.message}>
 
-                        Sea Voyager does not support account registration.
+                        Seevoy does not support account registration.
 
                         <br />
                         <br />

@@ -68,7 +68,7 @@ Error: \`\`${error}\`\`
   return (
     <div className={styles.container}>
 
-      <h2>Sea Voyager crashed!</h2>
+      <h2>Seevoy crashed!</h2>
 
     </div>
   );

@@ -18,3 +18,9 @@
     color: var(--ion-color-medium);
   }
 }
+
+.padding {
+    padding-left:   0.5rem;
+    padding-right:  0.5rem;
+}
+

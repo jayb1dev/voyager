@@ -14,69 +14,37 @@ export default function AppDetails() {
         <img src="/logo.png" alt="" />
 
         <div>
-            Sea Voyager
+            Seevoy
         </div>
 
       </div>
       
-      <div>
-            VERSION 1.0.90
+      <div className={styles.padding}>
+            VERSION 1.0.94
       </div>
 
-      <div>
+      <div className={styles.padding}>
         <p>
-
-          Sea Voyager is a fork of Voyager.
-
+            Seevoy is a Lemmy client with large text support.
         </p>
-
-        <p>
-
-          <IonItemInAppExternalLink
-            detail
-            href="https://github.com/aeharding/voyager"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            The official Voyager app by Alexander Harding can be found here.
-          </IonItemInAppExternalLink>
-
-        </p>
-
-        <p>
-            Sea Voyager helps you to see Voyager with 
-            enhanced large text support.
-        </p>
-
-        <p>
-            The hope is that these accessibility enhancements can be
-            merged into or otherwise supported by the official
-            Voyager app.
-        </p>
-
       </div>
 
-      <div>
-            LICENSE AGPL-3.0
-      </div>
-
-      <div>
+      <div className={styles.padding}>
 
         <IonItemInAppExternalLink
             detail
-            href="https://github.com/jayb1dev/voyager/tree/sea-voyager"
+            href="https://github.com/jayb1dev/voyager/tree/seevoy"
             target="_blank"
             rel="noopener noreferrer"
           >
 
-          Sea Voyager is released under the
+          Seevoy is released under the
           AGPL-3.0 license.
           The source code is available here.
 
         </IonItemInAppExternalLink>
 
       </div>
-
 
     </>
   );
