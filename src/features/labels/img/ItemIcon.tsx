@@ -36,10 +36,6 @@ export default function ItemIcon({
       <img
         style={{ 
                     borderRadius:   `50%`,
-                    minWidth:       `${size}px`,
-                    minHeight:      `${size}px`,
-                    maxWidth:       `${size}px`, 
-                    maxHeight:      `${size}px`,
                     width:          `${size}px`, 
                     height:         `${size}px` }}
 
@@ -49,6 +45,7 @@ export default function ItemIcon({
         onError={() => {
           setFailed(true);
         }}
+        className={cx(styles.subImgIcon, className)}
         slot={slot}
       />
     );
