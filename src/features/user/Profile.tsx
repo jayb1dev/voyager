@@ -67,7 +67,7 @@ export default function Profile({ person, onPull }: ProfileProps) {
   const header = (
     <MaxWidthContainer>
       <div className={styles.userName}>
-        {getHandle(person.person_view.person)}
+        {getRemoteHandle(person.person_view.person)}
       </div>
       <Scores
         aggregates={person.person_view.counts}

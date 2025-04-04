@@ -106,7 +106,7 @@ export default function CommentHeader({
                 showTag={false}
                 sourceUrl={commentView.comment.ap_id}
               />{" "}
-              deleted their <span className="ion-text-nowrap">comment :(</span>
+              deleted their comment.
             </div>
             <div className={styles.spacer} />
             {renderAside(comment.updated || comment.published)}
