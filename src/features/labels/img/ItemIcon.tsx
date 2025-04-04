@@ -34,17 +34,26 @@ export default function ItemIcon({
   if (icon && !failed)
     return (
       <img
-        style={{ width: `${size}px`, height: `${size}px` }}
+        style={{ 
+                    borderRadius:   `50%`,
+                    minWidth:       `${size}px`,
+                    minHeight:      `${size}px`,
+                    maxWidth:       `${size}px`, 
+                    maxHeight:      `${size}px`,
+                    width:          `${size}px`, 
+                    height:         `${size}px` }}
+
         src={getImageSrc(icon, {
           size,
         })}
         onError={() => {
           setFailed(true);
         }}
-        className={cx(styles.subImgIcon, className)}
         slot={slot}
       />
     );
+
+  // className={cx(styles.subImgIcon, className)}
 
   return (
     <FakeIcon

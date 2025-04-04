@@ -232,6 +232,7 @@ function ResolvedCommunitiesList({
         </Virtualizer>
       </div>
 
+ {/*
       <AlphabetJump
         virtuaRef={virtuaRef}
         separators={compact(
@@ -240,6 +241,8 @@ function ResolvedCommunitiesList({
           ),
         )}
       />
+ */}
+
     </StickyIndexContext>
   );
 }

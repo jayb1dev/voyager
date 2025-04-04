@@ -116,12 +116,41 @@ export default function CommunityListItem({
         lines={line ? "inset" : "none"}
         className={className}
       >
-        <div className={listStyles.content}>
-          <ItemIcon item={community} size={28} />
-          <div className={styles.wrap}>
-            {handle}
-          </div>
+        <div 
+                style={{    
+                        display:        `flex`,
+                        alignItems:     `center`,
+                        gap:            `1rem` }} >
+
+            <div
+                style={{    
+                        minWidth:       `28px`, 
+                        minHeight:      `28px`,
+                        maxWidth:       `28px`, 
+                        maxHeight:      `28px`,
+                        width:          `28px`, 
+                        height:         `28px` }} >
+
+                <ItemIcon 
+                    style={{    
+                            minWidth:       `28px`, 
+                            minHeight:      `28px`,
+                            maxWidth:       `28px`, 
+                            maxHeight:      `28px`,
+                            width:          `28px`, 
+                            height:         `28px` }}
+                    item={community} size={28} />
+
+            </div>
+
+            <div 
+                className={styles.wrap}>
+
+                {handle}
+            </div>
+
         </div>
+
         {loggedIn && (
           <ActionButton
             slot="end"
