@@ -91,9 +91,6 @@ export default function PersonLink({
     ) === OInstanceUrlDisplayMode.WhenRemote;
 
   let color: string | undefined;
-  let infoTag: string | undefined;
-
-  infoTag = "";
 
   if (_color) {
     color = _color;
@@ -106,14 +103,6 @@ export default function PersonLink({
     color = "var(--ion-color-tertiary-tint)";
   } else if (opId && person.id === opId) {
     color = "var(--ion-color-primary-fixed)";
-  }
-
-  if (opId && person.id === opId) {
-    infoTag += " [OP]";
-  }
-
-  if (isAdmin) {
-    infoTag += " [A]";
   }
 
   const tagText = typeof tag === "object" ? tag.text : undefined;
@@ -129,10 +118,31 @@ export default function PersonLink({
     item: person,
   });
 
+  const isLocal = person.local;
+  const isOP = (opId && person.id === opId);
+
   const end = (
     <>
       {instance}
-      {infoTag}
+
+      {isLocal && (
+        <>
+            {" [L]"}
+        </>
+      )}
+
+      {isOP && (
+        <>
+            {" [OP]"}
+        </>
+      )}
+
+      {isAdmin && (
+        <>
+            {" [A]"}
+        </>
+      )}
+
       {showBadge && (
         <>
           {person.bot_account && " 🤖"}

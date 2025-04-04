@@ -14,12 +14,14 @@ export default function Handle(props: HandleProps) {
 }
 
 export function renderHandle({ showInstanceWhenRemote, item }: HandleProps) {
-  if (showInstanceWhenRemote && !item.local)
+  // if (showInstanceWhenRemote && !item.local)
+  if (showInstanceWhenRemote) {
     return [
       item.name,
       // eslint-disable-next-line react/jsx-key
       <aside className={styles.aside}>@{getItemActorName(item)}</aside>,
     ];
+  }
 
   return [item.name];
 }

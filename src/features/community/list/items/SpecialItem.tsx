@@ -29,11 +29,22 @@ export default function SpecialItem({
       className={className}
     >
       <div className={listStyles.content}>
-        <IonIcon
-          className={listStyles.subIcon}
-          icon={getIcon(type)}
-          style={{ background: getIconBg(type) }}
-        />
+
+        <div 
+            style={{    
+                        width:          `28px`, 
+                        height:         `28px` }}
+        >
+
+            <IonIcon
+                icon={getIcon(type)}
+                style={{    
+                            width:          `28px`, 
+                            height:         `28px` }}
+            />
+
+        </div>
+
         <div>
           {getTitle(type)}
           <aside>{getDescription(type, actor)}</aside>

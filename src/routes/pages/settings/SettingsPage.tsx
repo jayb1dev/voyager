@@ -200,15 +200,6 @@ export default function SettingsPage() {
         </IonList>
 
         <IonList inset>
-          <IonItem routerLink="/settings/reddit-migrate">
-            <IconBg color="#ff5700" slot="start">
-              <IonIcon icon={bagCheck} />
-            </IconBg>
-            <IonLabel className="ion-text-nowrap">Migrate Subreddits</IonLabel>
-          </IonItem>
-        </IonList>
-
-        <IonList inset>
           <IonItem routerLink="/settings/about">
             <IconBg color="#0e7afe" size="1.15" slot="start">
               <IonIcon icon={at} />
