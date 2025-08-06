@@ -78,7 +78,6 @@
     "capacitor-reader": "^1.0.0",
     "capacitor-share-safari": "^0.1.2",
     "capacitor-stash-media": "^3.1.1",
-    "capacitor-tips": "^2.1.0",
     "colorjs.io": "^0.5.2",
     "compare-versions": "^6.1.1",
     "date-fns": "^4.1.0",
@@ -159,6 +158,7 @@
     "vite": "^6.3.4",
     "vite-plugin-pwa": "^1.0.0",
     "vite-plugin-svgr": "^4.3.0",
-    "vitest": "^3.1.2"
+    "vitest": "^3.1.2",
+    "workbox-window": "^7.3.0"
   }
 }

@@ -109,9 +109,6 @@ importers:
       capacitor-stash-media:
         specifier: ^3.1.1
         version: 3.1.1(@capacitor/core@7.2.0)
-      capacitor-tips:
-        specifier: ^2.1.0
-        version: 2.1.0(@capacitor/core@7.2.0)
       colorjs.io:
         specifier: ^0.5.2
         version: 0.5.2
@@ -350,6 +347,9 @@ importers:
       vitest:
         specifier: ^3.1.2
         version: 3.1.2(@types/debug@4.1.12)(@types/node@22.15.3)(happy-dom@15.11.6)(jiti@2.4.2)(jsdom@26.1.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(stylus@0.62.0)(terser@5.36.0)
+      workbox-window:
+        specifier: ^7.3.0
+        version: 7.3.0
 
 packages:
 
@@ -2574,11 +2574,6 @@ packages:
 
   capacitor-stash-media@3.1.1:
     resolution: {integrity: sha512-ms/GX1vs7Sg2RFQel98UCysIG7ATVSbfDQYelVoRK/c22wyeuANPCBjAUh/hFFbNR16vEvKY75+5Dq9zjG81EQ==}
-    peerDependencies:
-      '@capacitor/core': '>=7.0.0'
-
-  capacitor-tips@2.1.0:
-    resolution: {integrity: sha512-kosVsotH7+/K5iMo3ixvS2WLDpMy/mJ/d29GabNtio6h/tFLpYtJJ1td0RzbWja4ZNwaRupiBlp+qzMAcjltSQ==}
     peerDependencies:
       '@capacitor/core': '>=7.0.0'
 
@@ -5838,6 +5833,7 @@ packages:
   source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
 
   sourcemap-codec@1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
@@ -9340,10 +9336,6 @@ snapshots:
       '@capacitor/core': 7.2.0
 
   capacitor-stash-media@3.1.1(@capacitor/core@7.2.0):
-    dependencies:
-      '@capacitor/core': 7.2.0
-
-  capacitor-tips@2.1.0(@capacitor/core@7.2.0):
     dependencies:
       '@capacitor/core': 7.2.0
 
